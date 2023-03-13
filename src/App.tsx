@@ -1,13 +1,15 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import { RouterProvider } from "react-router";
+import { router } from "./Router/Route/Route";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <h1 className="bg-red-500">hi</h1>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
